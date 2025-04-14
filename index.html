@@ -3,36 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mandala Art by [Artist Name]</title>
+  <title>Mandala Creations | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary: #fef6e4;
+      --accent: #d4a373;
+      --text-dark: #2e2e2e;
+      --text-light: #6c584c;
+    }
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #fdf6f0;
-      color: #333;
+      padding: 0;
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: var(--primary);
+      color: var(--text-dark);
+      line-height: 1.6;
     }
     header {
-      background: #d9a7c7;
-      padding: 1rem;
+      background: var(--accent);
+      padding: 1rem 0;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      color: #fff;
+      margin-bottom: 0.3rem;
     }
     nav a {
       margin: 0 1rem;
       text-decoration: none;
       color: #fff;
-      font-weight: bold;
+      font-weight: 600;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Starry_Night_Over_the_Rhone.jpg/1280px-Starry_Night_Over_the_Rhone.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      color: #fdf6e4;
     }
     main {
-      padding: 2rem;
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
       text-align: center;
     }
+    main h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--text-light);
+    }
+    main p {
+      font-size: 1.1rem;
+    }
     footer {
-      background: #f0c27b;
+      background: #eee;
+      padding: 1.5rem;
       text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -47,13 +106,18 @@
     </nav>
   </header>
 
+  <div class="hero">
+    <h2>Art That Breathes Peace</h2>
+    <p>Explore intricate mandala designs rooted in mindfulness and expression.</p>
+  </div>
+
   <main>
-    <h2>Welcome to the world of Mandalas</h2>
-    <p>Explore the intricate and calming world of mandala art by [Artist Name].</p>
+    <h3>Welcome</h3>
+    <p>Welcome to the world of Mandala Creations — where each design is a journey, each pattern a meditation. I invite you to browse, reflect, and enjoy the flow of this sacred art form.</p>
   </main>
 
   <footer>
-    &copy; 2025 Mandala Creations | All rights reserved
+    &copy; 2025 Mandala Creations | Designed with light and love by [Your Name]
   </footer>
 </body>
 </html>
